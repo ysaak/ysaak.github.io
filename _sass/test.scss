@@ -1,0 +1,20 @@
+header {
+    background-color: #7272A1;
+}
+
+
+ul {
+  background: #bbb;
+}
+li, [class*="grid"] > * {
+  background: #ccc;
+}
+footer {
+  background: #ddd;
+}
+main {
+  background: #eee;
+}
+aside {
+  background: #aaa;
+}
