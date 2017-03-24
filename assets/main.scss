@@ -1,8 +1,9 @@
 ---
 ---
 
-body {
-    background-color: #49495A;
-}
-
-@import "test";
+/* ------------ Imports ------------ */
+@import "variables";
+@import "mixins";
+@import "shadows";
+@import "base";
+@import "header";

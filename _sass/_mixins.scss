@@ -1,0 +1,18 @@
+/* Breakpoints mixins */
+@mixin bp-small {
+  @media (min-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin bp-normal {
+  @media (min-width: #{$breakpoint-normal}) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}

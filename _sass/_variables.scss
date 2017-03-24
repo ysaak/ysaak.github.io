@@ -1,0 +1,22 @@
+
+
+
+/* ------------ Breakpoints ------------ */
+$breakpoint-small:  50rem;
+$breakpoint-normal: 60rem;
+$breakpoint-large:  80rem;
+
+/* ------------ Colors ------------ */
+// -- Duo Tone : https://atom.io/themes/duotone-dark-space-syntax
+// Uno hue
+$uno-1: #bebeef;
+$uno-2: #8686cb;
+$uno-3: #7272a1;
+$uno-4: #5b5b7b;
+$uno-5: #49495a;
+$uno-6: darken($uno-5, 20%);
+
+// Duo hue
+$duo-1: #fe7734;
+$duo-2: #b06845;
+$duo-3: #644c40;

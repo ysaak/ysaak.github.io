@@ -1,0 +1,34 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.world {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    & > main {
+        flex: 1;
+    }
+
+    @include bp-small {
+        padding-left: 15rem;
+    }
+
+    @include bp-normal {
+        padding-left: 20rem;
+    }
+
+    @include bp-large {
+        padding-left: 30rem;
+    }
+}
+
+#footer {
+    background-color: $uno-5;
+    color: #222;
+
+    padding: 1em;
+}
