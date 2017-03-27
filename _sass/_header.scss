@@ -3,7 +3,7 @@
     transition: width 0.25s ease;
 
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -16,7 +16,7 @@
         left: 0;
         z-index: 99;
 
-        flex-direction: column;
+        flex-flow: column nowrap;
         align-items: stretch;
 
         width: 15rem;
