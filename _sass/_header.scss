@@ -30,18 +30,33 @@
         width: 30rem;
     }
 
-    h1, h2 {
-        color: #FFF;
-        text-align: center;
-        display: inline-block;
-
+    .brand, .site-title {
+        display: block;
         margin: 0;
         padding: 0;
+
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
     }
 
-    h1 { order: 1; }
-    h2 { order: 3; }
-    nav { order: 2; }
+    .brand {
+        font-size: 2em;
+        text-decoration: none;
+
+
+        @include bp-normal {
+            font-size: 3em;
+        }
+    }
+
+    .site-title {
+        font-size: 2em;
+
+        @include bp-normal {
+            font-size: 3em;
+        }
+    }
 }
 
 #header > nav {
