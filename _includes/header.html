@@ -4,12 +4,18 @@
     </div>
 
     <nav class="header-item" role="navigation">
-
         <ul>
         {% assign pages = site.pages | sort: "weight" %}
         {% for node in pages %}
             {% if node.title %}
-            <li{% if node.url  == page.url %} class="active"{% endif %}><a href="{{ node.url }}">{{ node.title }}</a></li>
+                {% assign current = false %}
+                {% if page.url == '/' and node.url == '/' %}
+                    {% assign current = true %}
+                {% endif %}
+                {% if node.url != '/' and page.url contains node.url %}
+                    {% assign current = true %}
+                {% endif %}
+            <li{% if current %} class="active"{% endif %}><a href="{{ node.url }}">{{ node.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
