@@ -1,0 +1,36 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+weight: 4
+
+typelist:
+  - key: thesis
+    text: Ph.D Thesis
+  - key: jourint
+    text: Refereed International Journals
+  - key: confint
+    text: Refereed International Conference Proceedings
+  - key: confnat
+    text: Refereed National Conference Proceedings
+---
+
+{% assign type = 'freestyle' %}
+{% for item in page.typelist %}
+<div class="">
+    <h2>{{ item.text }}</h2>
+    {% assign typepub = site.publications | where: "type", item.key | sort: "year", "last" %}
+    {% for publication in typepub %}
+    <article class="card card-content">
+        <h2 class="card-title"><a href="{{ publication.url | prepend: site.baseurl }}" class="card-title">{{ publication.title }}</a></h2>
+        <p>{{ publication.authors }}</p>
+        <p>{{ publication.localisation }}</p>
+    </article>
+    {% endfor %}
+</div>
+{% endfor %}
+</div>
+
+{% comment %}
+http://icube-publis.unistra.fr/?author=Damien%20Roth
+{% endcomment %}

@@ -32,3 +32,17 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+# Collections
+collections:
+    publications:
+        output: true
+        permalink: /publications/:title.html
+
+default:
+    - scope:
+        path: ""
+        type: publications
+      values:
+        layout: publication
