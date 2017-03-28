@@ -26,12 +26,13 @@ github_username:  ysaak
 
 # Build settings
 markdown: kramdown
-#theme: minima
+
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 
 # Collections
