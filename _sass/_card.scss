@@ -1,0 +1,24 @@
+
+.card {
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.1),0px 0.3rem 0.3rem rgba(0,0,0,0.2);
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    border-bottom: 0.1rem solid #333;
+    color: #333;
+    margin-top: 0;
+
+    a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.card-content {
+    padding: 1rem;
+}
