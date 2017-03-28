@@ -5,14 +5,10 @@
     <ul class="social-media-list">
       {% if site.github_username %}
       <li>
-        {% include icon-github.html username=site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}"><i class="fi-social-github"></i> {{ site.github_username }}</a>
       </li>
       {% endif %}
 
-      {% if site.twitter_username %}
-      <li>
-        {% include icon-twitter.html username=site.twitter_username %}
-      </li>
-      {% endif %}
+      <li><i class="fi-rss"></i> subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></li>
     </ul>
 </footer>
