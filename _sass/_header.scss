@@ -41,12 +41,24 @@
     }
 
     .brand {
-        font-size: 2em;
+        //font-size: 2em;
         text-decoration: none;
+        transform: rotate(35deg);
 
+        img {
+            height: 40px;
+            margin: 0 1rem;
 
-        @include bp-normal {
-            font-size: 3em;
+            @include bp-small {
+                margin: 1rem;
+                width: 10rem;
+                height: auto;
+            }
+
+            @include bp-normal {
+                margin: 2rem;
+                width: 15rem;
+            }
         }
     }
 

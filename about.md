@@ -29,4 +29,4 @@ It doubles as my resume ([publications]({{'/publications/' | relative_url }})) a
 
 The posts are licensed under the [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/) unless stated otherwise. Please contact me if you take advantage of this; I would like to hear about it.
 
-Footer icons made by [SimpleIcon](http://www.flaticon.com/authors/simpleicon) from [Flaticon](http://www.flaticon.com) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+Icons made by [SimpleIcon](http://www.flaticon.com/authors/simpleicon) or [Flat Icons](http://www.flaticon.com/authors/flat-icons) from [Flaticon](http://www.flaticon.com) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
