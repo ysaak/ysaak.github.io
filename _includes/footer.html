@@ -1,13 +1,14 @@
 <footer id="footer">
 
     <ul class="social-media-list">
+        <li><a href="{{ '/contact/' | relative_url }}"><span><img src="{{ '/assets/icon-mail.svg' | relative_url }}" width="35" height="35"></span> Email</a></li>
         {% if site.github_username %}
-        <li><a href="https://github.com/{{ site.github_username }}"><span><i class="fi-social-github"></i></span> GitHub</a></li>
+        <li><a href="https://github.com/{{ site.github_username }}"><span><img src="{{ '/assets/icon-github.svg' | relative_url }}" width="40" height="40"></span> GitHub</a></li>
         {% endif %}
         {% if site.linkedin_username %}
-        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/"><span><i class="fi-social-linkedin"></i></span> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/"><span><img src="{{ '/assets/icon-linkedin.svg' | relative_url }}" width="25" height="25"></span> LinkedIn</a></li>
         {% endif %}
-        <li><a href="{{ "/feed.xml" | relative_url }}"><span><i class="fi-rss"></i></span> RSS</a></li>
+        <li><a href="{{ "/feed.xml" | relative_url }}"><span><img src="{{ '/assets/icon-rss.svg' | relative_url }}" width="25" height="25"></span> RSS</a></li>
     </ul>
 
     <small>Powered by <a href="http://jekyllrb.com/">Jekyll</a> &mdash;
