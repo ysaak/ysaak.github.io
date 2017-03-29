@@ -1,20 +1,19 @@
 ---
-layout: default
+layout: page
 ---
-<article class="publication">
-    <h1>{{ page.title }}</h1>
 
-    <header class="card card-content">
-        <p>{{ page.authors }}</p>
-        <p>{{ page.localisation }}</p>
-    </header>
+<header class="card card-content">
+    <p>{{ page.authors }}</p>
+    <p>{{ page.localisation }}</p>
+</header>
 
-    <p><strong>Abstract</strong></p>
-    {{ content }}
+<p><strong>Abstract</strong></p>
+<div class="post-content">
+{{ content }}
+</div>
 
-    {% if page.link %}
-    <footer class="ptm">
-        <a href="{{ page.link }}">Full text</a>
-    </footer>
-    {% endif %}
-</article>
+{% if page.link %}
+<footer class="ptm txtright">
+    <a href="{{ page.link }}">Full text</a>
+</footer>
+{% endif %}
