@@ -1,14 +1,15 @@
 <footer id="footer">
-    <small>Powered by <a href="http://jekyllrb.com/">Jekyll</a> &mdash;
-        Hosted with &hearts; by <a href="https://github.com/">GitHub</a></small>
 
     <ul class="social-media-list">
-      {% if site.github_username %}
-      <li>
-        <a href="https://github.com/{{ site.github_username }}"><i class="fi-social-github"></i> {{ site.github_username }}</a>
-      </li>
-      {% endif %}
-
-      <li><i class="fi-rss"></i> subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></li>
+        {% if site.github_username %}
+        <li><a href="https://github.com/{{ site.github_username }}"><span><i class="fi-social-github"></i></span> GitHub</a></li>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/"><span><i class="fi-social-linkedin"></i></span> LinkedIn</a></li>
+        {% endif %}
+        <li><a href="{{ "/feed.xml" | relative_url }}"><span><i class="fi-rss"></i></span> RSS</a></li>
     </ul>
+
+    <small>Powered by <a href="http://jekyllrb.com/">Jekyll</a> &mdash;
+        Hosted with &hearts; by <a href="https://github.com/">GitHub</a></small>
 </footer>
