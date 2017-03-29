@@ -7,7 +7,7 @@
         <ul>
         {% assign pages = site.pages | sort: "weight" %}
         {% for node in pages %}
-            {% if node.title %}
+            {% if node.title and node.weight %}
                 {% assign current = false %}
                 {% if page.url == '/' and node.url == '/' %}
                     {% assign current = true %}
