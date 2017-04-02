@@ -1,0 +1,141 @@
+work:
+    - company: Euro Protection Surveillance
+      location: Strasbourg, France
+      position: Chef de projet
+      period: Mars 2015 à aujourd'hui
+      description: >
+        Création, étude et maintenance des différents logiciels de la société conçus en Java et PL/SQL
+      technologies:
+          - Java, Java EE
+          - PL/SQL
+
+    - company: Tahis Consuling
+      location: Strasbourg, France
+      position: Ingénieur d'études et de développement
+      period: Mars 2013 à février 2015
+      description: >
+        En mission chez EPS (Euro Protection Surveillance) : création, étude et maintenance des différents logiciels de la société conçus en Java et PL/SQL
+      technologies:
+          - Java
+          - Java Swing
+          - PL/SQL
+
+    - company: Université de Strasbourg
+      location: Strasbourg, France
+      position: Doctorant contractuel chargé d'enseignement
+      period: Octobre 2009 à novembre 2012
+      description: >
+        Recherche sur les systèmes embarqués contraints, la mobilité IPv6 et le routage opportuniste.
+
+        Enseignement : Dispense de TD et TP de la Licence 1 à la Licence 3 pour différentes matières (introduction à l'informatique, réseaux et protocoles et autres)
+      technologies:
+          - C
+          - WSNet simulator
+          - Contiki OS
+          - Java
+          - Python
+
+    - type: company
+      company: Université de Strasbourg
+      location: France
+      position: Stagiaire de recherche
+      period: Février à Mai 2009
+      description: >
+        Stage de fin d'étude au sein de l'équipe Réseaux et Protocoles sur le thème de la gestion de pannes dans les réseaux de capteurs sans fil
+        - Rédaction d'un mémoire de stage
+        - Réalisation d'expérimentations à l'aide du simulateur WSNet (langage C)
+      technologies:
+          - C
+          - WSNet simulator
+          - Java
+
+    - type: company
+      company: Eiffage construction
+      location: France
+      position: Développeur Web
+      period: Juillet à août 2008
+      description: Maintenance et évolution des différentes applications Web 2.0 de l'entreprise.
+      technologies:
+          - HTML / CSS2
+          - PHP
+          - Zend Framework
+          - Javascript / JQuery
+
+    - type: company
+      company: Voltigeur Informatique
+      location: Sélestat, France
+      position: Développeur Web
+      period: Années 2004 à 2008
+      description: >
+          Conception et développement de site web, applications Web 2.0 pour différentes entreprises locales :
+          - Plateforme de e-commerce
+          - Archives documentaires (intranet)
+          - Plateforme de gestion et de vente en intranet (interfaces de gestion et de caisse)
+          - Site web publicitaire
+      technologies:
+          - HTML / CSS2
+          - PHP
+          - Javascript / JQuery
+          - Flash
+          - Zend Framework
+
+opensource:
+    - project: phpSysInfo
+      url: http://phpsysinfo.sourceforge.net/
+      description: Interface web écrite en PHP présentant des informations concernant le système
+    - project: Jitsi
+      url: https://jitsi.org/
+      description: Client java de messagerie instantanée et de voix sur IP
+
+education:
+    - date: 2009 - 2012
+      institution: Université de Strasbourg
+      title: Doctorat en Informatique
+      description: Gestion dans la mobilité dans les réseaux de capteurs sans fil
+    - date: 2009
+      institution: Université de Strasbourg
+      title: Master 2 Informatique Fondamentale et Appliquée
+      description: Spécialité Recherche
+    - date: 2008
+      institution: Université de Strasbourg
+      title: Master 1 Informatique Fondamentale et Appliquée
+    - date: 2007
+      institution: Université Louis Pasteur, Strasbourg
+      title: Licence Informatique
+    - date: 2006
+      institution: Université Louis Pasteur, Strasbourg
+      title: DEUG
+      description: Mathématiques et Informatique Appliqué aux Sciences
+
+
+skills:
+    - name: Front-end tech/frameworks
+      keywords:
+          - HTML5
+          - CSS3
+          - Javascript
+          - JavaFx
+
+    - name: Object-oriented programming
+      keywords:
+          - Java
+          - Ruby
+          - Python
+          - PHP
+
+    - name: Relational databases
+      keywords:
+          - Oracle
+          - MySQL
+          - SQLite
+
+    - name: Back-end web frameworks
+      keywords:
+          - Spring
+          - Ruby on Rails
+
+languages:
+        - name: French
+          level: Mastery (Native speaker)
+        - name: English
+          level: Vantage

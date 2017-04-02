@@ -1,0 +1,75 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+---
+
+<div class="card card-content">
+    <h3 class="card-title">Experience</h3>
+
+    {% for work in site.data.resume.work %}
+    <div class="flex-container">
+        <div class="w200p">
+            {{ work.period }}
+        </div>
+        <div class="flex-item-fluid">
+            <div class="flex-container">
+                <h3 class="flex-item-fluid">{{ work.position }}</h3>
+                <span>{{ work.company }}, {{ work.location }}</span>
+            </div>
+
+            <div>
+                {{ work.description | markdownify }}
+            </div>
+
+            <div>
+                Technologies used :
+                <ul>
+                    {% for tech in work.technologies %}
+                    <li>{{ tech }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+
+<div class="card card-content">
+    <h3 class="card-title">Education</h3>
+    <ul>
+    {% for ed in site.data.resume.education %}
+      <li>{{ ed.date }} // {{ ed.title }} // {{ ed.institution }}
+          {% if ed.description %}
+          <hr> {{ ed.description }}
+          {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+</div>
+
+<div class="card card-content">
+    <h3 class="card-title">Skills</h3>
+    <ul class="grid-2">
+    {% for skill in site.data.resume.skills %}
+      <li>{{ skill.name }}
+          <ul>
+            {% for kw in skill.keywords %}
+            <li>{{ kw }}</li>
+            {% endfor %}
+          </ul>
+      </li>
+    {% endfor %}
+    </ul>
+</div>
+
+<div class="card card-content">
+    <h3 class="card-title">Languages</h3>
+    <ul>
+    {% for lang in site.data.resume.languages %}
+      <li><b>{{ lang.name }}:</b> {{ lang.level }}</li>
+    {% endfor %}
+    </ul>
+</div>
