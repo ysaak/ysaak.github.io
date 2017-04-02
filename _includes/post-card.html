@@ -1,0 +1,25 @@
+<article class="post-card card">
+
+
+    {% if post.image_header %}
+    <a class="summary-title" href="{{ post.url }}">
+        <div class="post-image">
+            <img src="{{ post.image_header | prepend: 'images/' | relative_url }}">
+        </div>
+    </a>
+    {% endif %}
+    <div class="card-content">
+        <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <div class="excerpt">{{ post.excerpt }}</div>
+
+    </div>
+    <div class="grid-2 card-footer">
+        <div>
+            <time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <div class="txtright">
+            <a href="{{ post.url }}">Continue Reading →</a>
+        </div>
+    </div>
+</article>

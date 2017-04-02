@@ -1,3 +1,54 @@
+.post-header {
+
+    margin-bottom: 2rem;
+
+    .post-title {
+        border-bottom: 1px solid #000;
+        margin-bottom: 0.5rem;
+    }
+
+    .post-meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .post-tags {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li + li {
+            margin-left: 1rem;
+        }
+    }
+}
+
 .post-content {
     text-align: justify;
+}
+
+.post-card {
+    max-width: 800px;
+
+    .post-image {
+        width: 800px;
+    }
+}
+
+ul.simple-post-list {
+    list-style: square;
+
+    a {
+        display: inline-block;
+        font-size: 1.2em;
+        padding-right: 1rem;
+    }
+    small {
+        color: #999;
+    }
 }

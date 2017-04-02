@@ -36,6 +36,8 @@ exclude:
   - vendor
   - script
 
+# Blog permalink
+permalink: /posts/:categories/:year/:month/:day/:title.html
 
 # Collections
 collections:

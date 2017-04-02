@@ -1,0 +1,12 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+weight: 3
+---
+
+<div class="post-list">
+{% for post in site.posts %}
+{% include post-card.html %}
+{% endfor %}
+</div>

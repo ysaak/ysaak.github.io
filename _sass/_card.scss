@@ -11,7 +11,7 @@
     letter-spacing: -0.05rem;
     border-bottom: 0.1rem solid #333;
     color: #333;
-    margin-top: 0;
+    margin: 1rem;
 
     a {
         text-decoration: none;
@@ -19,6 +19,18 @@
     }
 }
 
-.card-content {
+.card-content .card-title {
+    margin: 0;
+}
+
+.card-content, .card-footer {
     padding: 1rem;
+}
+
+.card-content + .card-footer, .card-title + .card-footer {
+    padding-top: 1rem;
+}
+
+.card-footer {
+
 }
