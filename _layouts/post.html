@@ -12,7 +12,7 @@ layout: default
 
         <ul class="post-tags">
             {% for tag in page.tags %}
-            <li><a href="#{{ tag | slugify }}"> {{ tag }} </a></li>
+            <li><a href="{{ '/posts/tags.html' | relative_url }}#{{ tag | slugify }}"> {{ tag }} </a></li>
             {% endfor %}
         </ul>
   </header>

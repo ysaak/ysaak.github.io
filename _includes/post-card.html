@@ -4,7 +4,7 @@
     {% if post.image_header %}
     <a class="summary-title" href="{{ post.url }}">
         <div class="post-image">
-            <img src="{{ post.image_header | prepend: 'images/' | relative_url }}">
+            <img src="{{ post.image_header | prepend: 'images/' | relative_url }}" alt="{{ post.title }}">
         </div>
     </a>
     {% endif %}
