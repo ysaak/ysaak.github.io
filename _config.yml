@@ -28,7 +28,7 @@ linkedin_username:  damienroth
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
